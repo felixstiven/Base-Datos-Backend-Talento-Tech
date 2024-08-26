@@ -14,6 +14,14 @@ const controllerEstudiantes = {
         } catch (error){
             return res.status(500).send(error.message)
         }
+    },
+    getEstudiantes : async (req, res) =>{
+        try {
+            const estudiante = await Estudiante.find({})
+            res.json(estudiante).status(200)
+        } catch (error){
+            return res.status(500).send(error.message)
+        }
     }
 }
 
