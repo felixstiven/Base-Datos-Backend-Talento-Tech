@@ -11,7 +11,7 @@ body{
 
 .container{
     position: relative;
-    max-width: 200px;
+    max-width: 220px;
     width: 100%;
 }
 
@@ -32,7 +32,82 @@ body{
 
 }
 .select-btn .arrow-dwn{
+display: flex;
+height: 21px;
+width: 19px;
+color: #fff;
+font-size: 14px;
+border-radius: 50%;
+background-color: blueviolet;
+align-items: center;
+justify-content: center;
+transition: 0.3s;
+}
+.select-btn.open  .arrow-dwn{
+    transform: rotate(-180deg);
 
+}
+
+.list-items{
+    position: relative;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 5px;
+    display: none;
+}
+.select-btn.open ~ .list-items { 
+    display: block;
+
+}
+
+.list-items .items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 0 10px;
+    border-radius: 8px;
+}
+.list-items .items:hover{
+    background-color: rgb(188, 165, 209);
+    color: #50e233;
+}
+
+.items .item-text{
+    margin-left: 5px;
+    font-size: 12px ;
+    font-weight: bold;
+    color: grey;
+}
+
+.items .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border: 1.5px solid gray;
+    border-radius: 2px;
+    transition:  all 0.3s ease-in-out;
+}
+
+.items.select .checkbox{
+    background-color: violet;
+    border-color: violet;
+}
+
+.checkbox .check-icon{
+    color: #fff;
+    font-size: 13px;
+    transform: scale(0);
+}
+
+.items.select  .check-icon{
+    transform: scale(1);
+    transition:  all 0.3s ease-in-out;
 }
 
 
