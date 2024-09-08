@@ -8,47 +8,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <form id="estudianteForm" action="">
-        <h1>Registro estudiantes</h1>
-        <div class="form">
-            <label for="IdEstudiante">Id Estudiante</label>
-            <input id="idestudiante" name="IdEstudiante" type="text">
-        </div>
-        <div class="form">
-            <label for="nombreEstudiante">Nombre de estudiante</label>
-            <input id="nombreEstudiante" name="nombreEstudiante" type="text">
-        </div>
-        <div class="container">
-            <div class="select-btn">
-                <span class="btn-text">seleccionar lenguaje</span>
-                <spa class="arrow-dwn">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </spa>
+    <div class="container-princ">
+        <form id="form" class="Form" action="">
+            <h1>Registro estudiantes</h1>
+            <div class="form">
+                <label for="IdEstudiante">Id Estudiante:</label>
+                <input id="idestudiante" name="IdEstudiante" type="text">
             </div>
-            <ul class="list-items">
-                <li class="items">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">Html & Css</span>
-                </li>
-                <li class="items">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">Javascript</span>
-                </li>
-                <li class="items">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">Ingles</span>
-                </li>
-            </ul>
-
-
-        </div>
-    </form>
+            <div class="form">
+                <label for="nombreEstudiante">Nombre de estudiante:</label>
+                <input id="nombreEstudiante" name="nombreEstudiante" type="text">
+            </div>
+            <div class="container">
+                <div class="select-btn">
+                    <span class="btn-text">seleccionar lenguaje</span>
+                    <spa class="arrow-dwn">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </spa>
+                </div>
+                <ul class="list-items">
+                    <li class="items">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Html & Css</span>
+                    </li>
+                    <li class="items">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Javascript</span>
+                    </li>
+                    <li class="items">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Ingles</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button class="btn-agregar">agregar</button>
+            </div>
+        </form>
+        <form action=""  id="form-2" class="Form-2">
+            <div>
+                <label for="">Asistencia:</label>
+                <span>Asistio</span>
+                <input type="checkbox">
+                <span>No asisistio</span>
+                <input type="checkbox">
+                <input class="date" type="date">
+            </div>
+            <div>
+                <label for="">Tareas:</label>
+                <span>entrego</span>
+                <input type="checkbox">
+                <span>no entrego</span>
+                <input type="checkbox">
+                <input class="date" type="date">
+            </div>
+            <div class="btn-2">
+                <button class="btn-agregar">agregar</button>
+            </div>   
+        </form>
+    </div>
+    <div class="tableFormt">
+        <table id="transactionTable">
+            <tr>
+                <th> <!-- t= tabla h= encabezado solo para el encabezado de la primera fila--> 
+                    ID
+                </th>
+                <th>
+                    Estudiante
+                </th>
+                <th>
+                    lenguaje
+                </th>
+                <th>
+                    Asistencia
+                </th>
+                <th>
+                    Tareas
+                </th>
+            </tr>
+        </table>
+    </div>
     <script src="index.js"></script>
     
 </body>

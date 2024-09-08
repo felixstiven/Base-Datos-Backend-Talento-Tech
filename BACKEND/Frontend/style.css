@@ -8,6 +8,16 @@
 body{
     background-color: gray;
 }
+.container-princ{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    position:absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
 
 .container{
     position: relative;
@@ -113,15 +123,14 @@ transition: 0.3s;
 
 
 
-#estudianteForm{
+.Form{
     margin: auto;
-    margin-top: 75px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 20px;
     background-color: rgb(199, 175, 223);
     width: 390px;
-    height: 170px;
+    height: 280px;
     padding: 20px;
     border-radius: 25px;
     box-shadow:  4px 2px 0px rgb(190, 140, 236);
@@ -146,5 +155,52 @@ transition: 0.3s;
     }
 }
 
+.btn{
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 250px;
+}
 
+.btn-agregar{
+    width: 75px;
+    height: 25px;
+    font-weight: bold;
+}
 
+.Form-2{
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(199, 175, 223);
+    width: 390px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow:  4px 2px 0px rgb(190, 140, 236);
+    
+    & .date{
+        width: 85px;
+    }
+    & .btn-2{
+        margin-left: 250px;
+    }
+}
+
+.tableFormt{
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 470px;
+    position: absolute;
+    
+}
+.tableFormt table{
+    margin: 10px auto;
+}
+th,
+td {
+    color: #fff;
+    border: 1px solid rgb(221, 77, 199);
+    padding: 5px;
+}
